@@ -45,7 +45,13 @@ struct DummyData {
             category: Category.hot),
         
         Drink(id: UUID().uuidString,
-            name: "Milk Latte", description: "The Coffe Latte is one of the most iconic espresso drinks, favored for its frothy foam topping. In this refreshing iced version, you can easily create foam with cold milk-no steamer needed.",
+            name: "Coca Cola", description: "The Coca Cola is one of the most iconic espresso drinks, favored for its frothy foam topping. In this refreshing iced version, you can easily create foam with cold milk-no steamer needed.",
+            imageLink: "https://cdn.pixabay.com/photo/2014/11/21/15/20/coffee-540653_960_720.jpg",
+            price: 3.50,
+              category: Category.softDrinks),
+        
+        Drink(id: UUID().uuidString,
+            name: "Pepsi", description: "The Pepsi is one of the most iconic espresso drinks, favored for its frothy foam topping. In this refreshing iced version, you can easily create foam with cold milk-no steamer needed.",
             imageLink: "https://cdn.pixabay.com/photo/2014/11/21/15/20/coffee-540653_960_720.jpg",
             price: 3.50,
               category: Category.softDrinks),

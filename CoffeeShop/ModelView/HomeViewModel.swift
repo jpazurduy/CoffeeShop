@@ -20,6 +20,7 @@ final class HomeViewModel: ObservableObject {
         self.selectedDrink = selectedDrink
     }
     
+    @MainActor
     func fetchDrink() async {
         do {
             drinks = try await repository.fetchDrinks()

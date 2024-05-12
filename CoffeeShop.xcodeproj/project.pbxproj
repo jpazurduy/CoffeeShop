@@ -13,6 +13,7 @@
 		7F0EC8292BED3261001DE630 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0EC8282BED3261001DE630 /* HomeViewModel.swift */; };
 		7F0EC82C2BED38FE001DE630 /* FirebaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0EC82B2BED38FE001DE630 /* FirebaseRepository.swift */; };
 		7F0EC82E2BED39B3001DE630 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0EC82D2BED39B3001DE630 /* Repository.swift */; };
+		7F21DBF72BF0788900095C36 /* DrinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F21DBF62BF0788900095C36 /* DrinRowView.swift */; };
 		7F33DE192BEBB98300506D6C /* CoffeeShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F33DE182BEBB98300506D6C /* CoffeeShopApp.swift */; };
 		7F33DE1B2BEBB98300506D6C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F33DE1A2BEBB98300506D6C /* ContentView.swift */; };
 		7F33DE1D2BEBB98500506D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F33DE1C2BEBB98500506D6C /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		7F0EC8282BED3261001DE630 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		7F0EC82B2BED38FE001DE630 /* FirebaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRepository.swift; sourceTree = "<group>"; };
 		7F0EC82D2BED39B3001DE630 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		7F21DBF62BF0788900095C36 /* DrinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinRowView.swift; sourceTree = "<group>"; };
 		7F33DE152BEBB98300506D6C /* CoffeeShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F33DE182BEBB98300506D6C /* CoffeeShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopApp.swift; sourceTree = "<group>"; };
 		7F33DE1A2BEBB98300506D6C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				7F33DE262BEBB9DA00506D6C /* HomeView.swift */,
 				7F33DE282BEBC3F600506D6C /* BasketView.swift */,
 				7F33DE2A2BEBC40100506D6C /* AccountView.swift */,
+				7F21DBF62BF0788900095C36 /* DrinRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 			files = (
 				7F33DE292BEBC3F600506D6C /* BasketView.swift in Sources */,
 				7F0EC8292BED3261001DE630 /* HomeViewModel.swift in Sources */,
+				7F21DBF72BF0788900095C36 /* DrinRowView.swift in Sources */,
 				7F0EC8232BED311E001DE630 /* Basket.swift in Sources */,
 				7F0EC82E2BED39B3001DE630 /* Repository.swift in Sources */,
 				7F33DE272BEBB9DA00506D6C /* HomeView.swift in Sources */,

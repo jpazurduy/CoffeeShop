@@ -9,7 +9,7 @@ import SwiftUI
 struct HomeView: View {
     // MARK: - PROPERTIES
     @StateObject private var viewModel = HomeViewModel(repository: FirebaseRepository())
-    @State private var isShowing: Bool = false
+    @State private var isShowingDetail: Bool = false
     
     var categories: [String: [Drink]] {
         .init(grouping: viewModel.drinks, by: { $0.category.rawValue })
@@ -25,7 +25,10 @@ struct HomeView: View {
                     Section {
                         if let drinks = categories[key] {
                             ForEach(drinks) { drink in
-                                Text(drink.name)
+                                DrinRowView(drink: drink) {
+                                    viewModel.selectedDrink(drink: drink)
+                                    self.isShowingDetail = true
+                                }
                             }
                         }
                     } header: {
@@ -38,6 +41,12 @@ struct HomeView: View {
                 .task {
                     await viewModel.fetchDrink()
                 }
+                .blur(radius: isShowingDetail ? 20 : 0)
+                .disabled(isShowingDetail)
+            }
+            
+            if isShowingDetail {
+                Text("This is detail view")
             }
         }
     }
