@@ -14,6 +14,8 @@
 		7F0EC82C2BED38FE001DE630 /* FirebaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0EC82B2BED38FE001DE630 /* FirebaseRepository.swift */; };
 		7F0EC82E2BED39B3001DE630 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0EC82D2BED39B3001DE630 /* Repository.swift */; };
 		7F21DBF72BF0788900095C36 /* DrinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F21DBF62BF0788900095C36 /* DrinRowView.swift */; };
+		7F21DBFA2BF0835100095C36 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 7F21DBF92BF0835100095C36 /* CachedAsyncImage */; };
+		7F21DBFD2BF0837A00095C36 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F21DBFC2BF0837A00095C36 /* RemoteImageView.swift */; };
 		7F33DE192BEBB98300506D6C /* CoffeeShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F33DE182BEBB98300506D6C /* CoffeeShopApp.swift */; };
 		7F33DE1B2BEBB98300506D6C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F33DE1A2BEBB98300506D6C /* ContentView.swift */; };
 		7F33DE1D2BEBB98500506D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F33DE1C2BEBB98500506D6C /* Assets.xcassets */; };
@@ -33,6 +35,7 @@
 		7F0EC82B2BED38FE001DE630 /* FirebaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRepository.swift; sourceTree = "<group>"; };
 		7F0EC82D2BED39B3001DE630 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		7F21DBF62BF0788900095C36 /* DrinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinRowView.swift; sourceTree = "<group>"; };
+		7F21DBFC2BF0837A00095C36 /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
 		7F33DE152BEBB98300506D6C /* CoffeeShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F33DE182BEBB98300506D6C /* CoffeeShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopApp.swift; sourceTree = "<group>"; };
 		7F33DE1A2BEBB98300506D6C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F21DBFA2BF0835100095C36 /* CachedAsyncImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,14 @@
 				7F0EC82D2BED39B3001DE630 /* Repository.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		7F21DBFB2BF0835800095C36 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				7F21DBFC2BF0837A00095C36 /* RemoteImageView.swift */,
+			);
+			path = ViewComponents;
 			sourceTree = "<group>";
 		};
 		7F33DE0C2BEBB98300506D6C = {
@@ -107,6 +119,7 @@
 		7F33DE2C2BEBC43E00506D6C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7F21DBFB2BF0835800095C36 /* ViewComponents */,
 				7F33DE262BEBB9DA00506D6C /* HomeView.swift */,
 				7F33DE282BEBC3F600506D6C /* BasketView.swift */,
 				7F33DE2A2BEBC40100506D6C /* AccountView.swift */,
@@ -151,6 +164,9 @@
 			dependencies = (
 			);
 			name = CoffeeShop;
+			packageProductDependencies = (
+				7F21DBF92BF0835100095C36 /* CachedAsyncImage */,
+			);
 			productName = CoffeeShop;
 			productReference = 7F33DE152BEBB98300506D6C /* CoffeeShop.app */;
 			productType = "com.apple.product-type.application";
@@ -179,6 +195,9 @@
 				Base,
 			);
 			mainGroup = 7F33DE0C2BEBB98300506D6C;
+			packageReferences = (
+				7F21DBF82BF0835100095C36 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
+			);
 			productRefGroup = 7F33DE162BEBB98300506D6C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -218,6 +237,7 @@
 				7F0EC82C2BED38FE001DE630 /* FirebaseRepository.swift in Sources */,
 				7F33DE302BEBC48400506D6C /* Drink.swift in Sources */,
 				7F0EC8272BED318F001DE630 /* User.swift in Sources */,
+				7F21DBFD2BF0837A00095C36 /* RemoteImageView.swift in Sources */,
 				7F33DE2B2BEBC40100506D6C /* AccountView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +444,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7F21DBF82BF0835100095C36 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7F21DBF92BF0835100095C36 /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F21DBF82BF0835100095C36 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
+			productName = CachedAsyncImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7F33DE0D2BEBB98300506D6C /* Project object */;
 }

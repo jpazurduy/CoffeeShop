@@ -24,8 +24,11 @@ struct DrinRowView: View {
             didClickRow()
         }, label: {
             HStack {
-                Rectangle()
+                RemoteImageView(url: drink.imageUrl)
+                    .scaledToFill()
                     .frame(width: 60, height: 60, alignment: .center)
+                    .cornerRadius(8)
+                    
                  
                 VStack(alignment: .leading, spacing: 5) {
                 
