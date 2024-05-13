@@ -13,7 +13,7 @@
 		7F0EC8292BED3261001DE630 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0EC8282BED3261001DE630 /* HomeViewModel.swift */; };
 		7F0EC82C2BED38FE001DE630 /* FirebaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0EC82B2BED38FE001DE630 /* FirebaseRepository.swift */; };
 		7F0EC82E2BED39B3001DE630 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0EC82D2BED39B3001DE630 /* Repository.swift */; };
-		7F21DBF72BF0788900095C36 /* DrinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F21DBF62BF0788900095C36 /* DrinRowView.swift */; };
+		7F21DBF72BF0788900095C36 /* DrinkRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F21DBF62BF0788900095C36 /* DrinkRowView.swift */; };
 		7F21DBFA2BF0835100095C36 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 7F21DBF92BF0835100095C36 /* CachedAsyncImage */; };
 		7F21DBFD2BF0837A00095C36 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F21DBFC2BF0837A00095C36 /* RemoteImageView.swift */; };
 		7F33DE192BEBB98300506D6C /* CoffeeShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F33DE182BEBB98300506D6C /* CoffeeShopApp.swift */; };
@@ -25,6 +25,7 @@
 		7F33DE2B2BEBC40100506D6C /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F33DE2A2BEBC40100506D6C /* AccountView.swift */; };
 		7F33DE302BEBC48400506D6C /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F33DE2F2BEBC48400506D6C /* Drink.swift */; };
 		7F33DE322BEBC59300506D6C /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F33DE312BEBC59300506D6C /* DummyData.swift */; };
+		7FB134372BF1C21B002A9052 /* DrinkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB134362BF1C21B002A9052 /* DrinkDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +35,7 @@
 		7F0EC8282BED3261001DE630 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		7F0EC82B2BED38FE001DE630 /* FirebaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRepository.swift; sourceTree = "<group>"; };
 		7F0EC82D2BED39B3001DE630 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
-		7F21DBF62BF0788900095C36 /* DrinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinRowView.swift; sourceTree = "<group>"; };
+		7F21DBF62BF0788900095C36 /* DrinkRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkRowView.swift; sourceTree = "<group>"; };
 		7F21DBFC2BF0837A00095C36 /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
 		7F33DE152BEBB98300506D6C /* CoffeeShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F33DE182BEBB98300506D6C /* CoffeeShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopApp.swift; sourceTree = "<group>"; };
@@ -46,6 +47,7 @@
 		7F33DE2A2BEBC40100506D6C /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		7F33DE2F2BEBC48400506D6C /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 		7F33DE312BEBC59300506D6C /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		7FB134362BF1C21B002A9052 /* DrinkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +125,8 @@
 				7F33DE262BEBB9DA00506D6C /* HomeView.swift */,
 				7F33DE282BEBC3F600506D6C /* BasketView.swift */,
 				7F33DE2A2BEBC40100506D6C /* AccountView.swift */,
-				7F21DBF62BF0788900095C36 /* DrinRowView.swift */,
+				7F21DBF62BF0788900095C36 /* DrinkRowView.swift */,
+				7FB134362BF1C21B002A9052 /* DrinkDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -226,10 +229,11 @@
 			files = (
 				7F33DE292BEBC3F600506D6C /* BasketView.swift in Sources */,
 				7F0EC8292BED3261001DE630 /* HomeViewModel.swift in Sources */,
-				7F21DBF72BF0788900095C36 /* DrinRowView.swift in Sources */,
+				7F21DBF72BF0788900095C36 /* DrinkRowView.swift in Sources */,
 				7F0EC8232BED311E001DE630 /* Basket.swift in Sources */,
 				7F0EC82E2BED39B3001DE630 /* Repository.swift in Sources */,
 				7F33DE272BEBB9DA00506D6C /* HomeView.swift in Sources */,
+				7FB134372BF1C21B002A9052 /* DrinkDetailView.swift in Sources */,
 				7F0EC8252BED314D001DE630 /* Order.swift in Sources */,
 				7F33DE1B2BEBB98300506D6C /* ContentView.swift in Sources */,
 				7F33DE322BEBC59300506D6C /* DummyData.swift in Sources */,

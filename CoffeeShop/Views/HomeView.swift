@@ -25,7 +25,7 @@ struct HomeView: View {
                     Section {
                         if let drinks = categories[key] {
                             ForEach(drinks) { drink in
-                                DrinRowView(drink: drink) {
+                                DrinkRowView(drink: drink) {
                                     viewModel.selectedDrink(drink: drink)
                                     self.isShowingDetail = true
                                 }
@@ -46,7 +46,10 @@ struct HomeView: View {
             }
             
             if isShowingDetail {
-                Text("This is detail view")
+                if let drink = viewModel.selectedDrink {
+                    DrinkDetailView(drink: drink, isShowingDetail: $isShowingDetail)
+                }
+                
             }
         }
     }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DrinRowView: View {
+struct DrinkRowView: View {
     // MARK: - PROPERTIES
     private let drink: Drink
     private var didClickRow: () -> Void
@@ -55,7 +55,7 @@ struct DrinRowView: View {
 // MARK: - PREVIEW
 struct DrinRowView_Previews: PreviewProvider {
     static var previews: some View {
-        DrinRowView(drink: DummyData.drinks[0]) {
+        DrinkRowView(drink: DummyData.drinks[0]) {
             print("a+b")
         }
     }
