@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol Repository {
+protocol Repository: ObservableObject {
     func fetchDrinks() async -> [Drink]
     func placeHolder(order: Order)
 }

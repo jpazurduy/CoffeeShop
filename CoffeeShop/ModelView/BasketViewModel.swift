@@ -10,9 +10,9 @@ import Foundation
 final class BasketViewModel: ObservableObject {
     @Published private(set) var items: [Drink] = []
     
-    private let repository: Repository?
+    private let repository: any Repository
     
-    init(repository: Repository) {
+    init(repository: any Repository) {
         self.repository = repository
     }
     
@@ -41,7 +41,7 @@ final class BasketViewModel: ObservableObject {
                           items: items,
                           totalValue: totalPrice)
         
-        repository?.placeHolder(order: order)
+        repository.placeHolder(order: order)
         items = []
     }
 }

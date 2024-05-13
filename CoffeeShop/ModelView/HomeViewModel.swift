@@ -9,7 +9,7 @@ import Foundation
 
 final class HomeViewModel: ObservableObject {
     
-    private let repository: Repository
+    private let repository: any Repository
     
     @Published private(set) var drinks: [Drink] = []
     @Published private(set) var selectedDrink: Drink?

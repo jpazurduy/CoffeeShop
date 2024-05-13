@@ -13,7 +13,7 @@ struct DrinkDetailView: View {
     
     @Binding var isShowingDetail: Bool
     
-    @EnvironmentObject var order: BasketViewModel
+    @EnvironmentObject var basket: BasketViewModel
     
     // MARK: - FUNCTIONS
     
@@ -21,7 +21,7 @@ struct DrinkDetailView: View {
     private func addToBasketButton() -> some View {
         Button(action: {
             // 1 Add to basket
-            order.add(drink: drink)
+            basket.add(drink: drink)
             // 2 Dismiss button
             isShowingDetail = false
         }, label: {
