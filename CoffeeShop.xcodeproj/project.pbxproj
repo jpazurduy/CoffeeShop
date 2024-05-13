@@ -25,6 +25,7 @@
 		7F33DE2B2BEBC40100506D6C /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F33DE2A2BEBC40100506D6C /* AccountView.swift */; };
 		7F33DE302BEBC48400506D6C /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F33DE2F2BEBC48400506D6C /* Drink.swift */; };
 		7F33DE322BEBC59300506D6C /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F33DE312BEBC59300506D6C /* DummyData.swift */; };
+		7F75AD182BF276E000378297 /* BasketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F75AD172BF276E000378297 /* BasketViewModel.swift */; };
 		7FB134372BF1C21B002A9052 /* DrinkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB134362BF1C21B002A9052 /* DrinkDetailView.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		7F33DE2A2BEBC40100506D6C /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		7F33DE2F2BEBC48400506D6C /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 		7F33DE312BEBC59300506D6C /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		7F75AD172BF276E000378297 /* BasketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewModel.swift; sourceTree = "<group>"; };
 		7FB134362BF1C21B002A9052 /* DrinkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				7F0EC8282BED3261001DE630 /* HomeViewModel.swift */,
+				7F75AD172BF276E000378297 /* BasketViewModel.swift */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F33DE292BEBC3F600506D6C /* BasketView.swift in Sources */,
+				7F75AD182BF276E000378297 /* BasketViewModel.swift in Sources */,
 				7F0EC8292BED3261001DE630 /* HomeViewModel.swift in Sources */,
 				7F21DBF72BF0788900095C36 /* DrinkRowView.swift in Sources */,
 				7F0EC8232BED311E001DE630 /* Basket.swift in Sources */,

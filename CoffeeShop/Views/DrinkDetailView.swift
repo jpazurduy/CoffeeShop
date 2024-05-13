@@ -10,7 +10,10 @@ import SwiftUI
 struct DrinkDetailView: View {
     // MARK: - PROPERTIES
     let drink: Drink
+    
     @Binding var isShowingDetail: Bool
+    
+    @EnvironmentObject var order: BasketViewModel
     
     // MARK: - FUNCTIONS
     
@@ -18,6 +21,7 @@ struct DrinkDetailView: View {
     private func addToBasketButton() -> some View {
         Button(action: {
             // 1 Add to basket
+            order.add(drink: drink)
             // 2 Dismiss button
             isShowingDetail = false
         }, label: {
@@ -30,6 +34,7 @@ struct DrinkDetailView: View {
     @ViewBuilder
     private func dissmissButton() -> some View {
         Button(action: {
+            
             isShowingDetail = false
         }, label: {
             Image(systemName: "xmark.circle.fill")
