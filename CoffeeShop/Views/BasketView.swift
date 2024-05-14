@@ -40,7 +40,7 @@ struct BasketView: View {
                     }
                 }
                 if basket.items.isEmpty {
-                    Text("Empty basket")
+                    EmptyBasketView(message: "You have no items in your basket please add some")
                 }
             }
             .navigationTitle("🛒 Basket")
