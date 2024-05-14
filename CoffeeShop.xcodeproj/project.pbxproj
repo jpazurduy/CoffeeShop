@@ -26,6 +26,7 @@
 		7F33DE302BEBC48400506D6C /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F33DE2F2BEBC48400506D6C /* Drink.swift */; };
 		7F33DE322BEBC59300506D6C /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F33DE312BEBC59300506D6C /* DummyData.swift */; };
 		7F3607B62BF3C363000FA1B0 /* EmptyBasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3607B52BF3C363000FA1B0 /* EmptyBasketView.swift */; };
+		7F3607B82BF3CF4C000FA1B0 /* AcountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3607B72BF3CF4C000FA1B0 /* AcountViewModel.swift */; };
 		7F75AD182BF276E000378297 /* BasketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F75AD172BF276E000378297 /* BasketViewModel.swift */; };
 		7FB134372BF1C21B002A9052 /* DrinkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB134362BF1C21B002A9052 /* DrinkDetailView.swift */; };
 /* End PBXBuildFile section */
@@ -50,6 +51,7 @@
 		7F33DE2F2BEBC48400506D6C /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 		7F33DE312BEBC59300506D6C /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		7F3607B52BF3C363000FA1B0 /* EmptyBasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyBasketView.swift; sourceTree = "<group>"; };
+		7F3607B72BF3CF4C000FA1B0 /* AcountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcountViewModel.swift; sourceTree = "<group>"; };
 		7F75AD172BF276E000378297 /* BasketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewModel.swift; sourceTree = "<group>"; };
 		7FB134362BF1C21B002A9052 /* DrinkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,6 +155,7 @@
 			children = (
 				7F0EC8282BED3261001DE630 /* HomeViewModel.swift */,
 				7F75AD172BF276E000378297 /* BasketViewModel.swift */,
+				7F3607B72BF3CF4C000FA1B0 /* AcountViewModel.swift */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				7F0EC82C2BED38FE001DE630 /* FirebaseRepository.swift in Sources */,
 				7F33DE302BEBC48400506D6C /* Drink.swift in Sources */,
 				7F0EC8272BED318F001DE630 /* User.swift in Sources */,
+				7F3607B82BF3CF4C000FA1B0 /* AcountViewModel.swift in Sources */,
 				7F21DBFD2BF0837A00095C36 /* RemoteImageView.swift in Sources */,
 				7F33DE2B2BEBC40100506D6C /* AccountView.swift in Sources */,
 			);
