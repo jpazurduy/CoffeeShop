@@ -10,12 +10,13 @@ import SwiftUI
 struct BasketView: View {
     // MARK: - PROPERTIES
     @EnvironmentObject var basket: BasketViewModel
+    @EnvironmentObject var userRepository: UserRepository
     
     // MARK: - FUNCTIONS
     @ViewBuilder
     func placeOrderButton() -> some View {
         Button(action: {
-            
+            basket.createOrder(for: userRepository.user)
         }, label: {
             Text("\(basket.totalPrice, format: .currency(code: "EUR")) - Place Order")
         })

@@ -14,9 +14,8 @@ final class FirebaseRepository: Repository {
     }
     
     func placeHolder(order: Order) {
-        print("Place an order with id: \(order.id)")
+        print("Place an order for: \(order.customerName)")
         for item in order.items {
-            print(item.name)
             print(item.name)
         }
     }

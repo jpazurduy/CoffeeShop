@@ -14,11 +14,12 @@ final class SecureStorage {
     private static let keychain = Keychain(service: "com.azurudy.CoffeeShop")
     
     func save(data: Data, with key: String) async {
-        SecureStorage.keychain[data: key]
+        SecureStorage.keychain[data: key] = data
     }
     
     func get(with key: String) async -> Data? {
-        SecureStorage.keychain[data: key]
+        let data = SecureStorage.keychain[data: key]
+        return data
     }
     
     func delete(with key: String) async {

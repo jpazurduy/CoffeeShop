@@ -12,10 +12,10 @@ class AccountViewModel: ObservableObject {
     @Published var address: String = ""
     @Published var mobile: String = ""
     
-    func setup(user: User) {
-        self.name = user.name
-        self.address = user.address
-        self.mobile = user.mobile
+    func setupUI(user: User?) {
+        self.name = user?.name ?? ""
+        self.address = user?.address ?? ""
+        self.mobile = user?.mobile ?? ""
     }
     
     func isInvalidForm() -> Bool {

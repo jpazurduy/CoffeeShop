@@ -11,8 +11,19 @@ struct AccountView: View {
     // MARK: - PROPERTIES
     
     @StateObject private var viewModel: AccountViewModel = AccountViewModel()
+    @EnvironmentObject var userRepository: UserRepository
     
     // MARK: - FUNCTIONS
+    
+    @ViewBuilder
+    func logoutButton() -> some View {
+        Button(action: {
+            userRepository.removeUser()
+            viewModel.setupUI(user: nil)
+        }, label: {
+            Text("Log out")
+        })
+    }
     
     // MARK: - BODY
     var body: some View {
@@ -26,14 +37,25 @@ struct AccountView: View {
                 
                 Section {
                     Button(action: {
-                        
+                        userRepository.saveChanges(name: viewModel.name,
+                                                   address: viewModel.address, mobile: viewModel.mobile)
                     }, label: {
-                        Text("Create User")
+                        Text(userRepository.user != nil ? "Update user" : "Create User")
                     })
                 }
                 .disabled(viewModel.isInvalidForm())
             }
             .navigationTitle("🤭 My Account")
+            .toolbar {
+                ToolbarItem(placement: .primaryAction) {
+                    if userRepository.user != nil {
+                        logoutButton()
+                    }
+                }
+            }
+            .onAppear {
+                viewModel.setupUI(user: userRepository.user)
+            }
         }
     }
 }
