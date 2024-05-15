@@ -27,8 +27,11 @@
 		7F33DE322BEBC59300506D6C /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F33DE312BEBC59300506D6C /* DummyData.swift */; };
 		7F3607B62BF3C363000FA1B0 /* EmptyBasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3607B52BF3C363000FA1B0 /* EmptyBasketView.swift */; };
 		7F3607B82BF3CF4C000FA1B0 /* AcountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3607B72BF3CF4C000FA1B0 /* AcountViewModel.swift */; };
+		7F3607BB2BF3D3D0000FA1B0 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 7F3607BA2BF3D3D0000FA1B0 /* KeychainAccess */; };
+		7F3607BE2BF3D3E2000FA1B0 /* SecureStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3607BD2BF3D3E2000FA1B0 /* SecureStorage.swift */; };
 		7F75AD182BF276E000378297 /* BasketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F75AD172BF276E000378297 /* BasketViewModel.swift */; };
 		7FB134372BF1C21B002A9052 /* DrinkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB134362BF1C21B002A9052 /* DrinkDetailView.swift */; };
+		7FCD60AD2BF466FD00E57007 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCD60AC2BF466FD00E57007 /* UserRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,8 +55,10 @@
 		7F33DE312BEBC59300506D6C /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		7F3607B52BF3C363000FA1B0 /* EmptyBasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyBasketView.swift; sourceTree = "<group>"; };
 		7F3607B72BF3CF4C000FA1B0 /* AcountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcountViewModel.swift; sourceTree = "<group>"; };
+		7F3607BD2BF3D3E2000FA1B0 /* SecureStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureStorage.swift; sourceTree = "<group>"; };
 		7F75AD172BF276E000378297 /* BasketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewModel.swift; sourceTree = "<group>"; };
 		7FB134362BF1C21B002A9052 /* DrinkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetailView.swift; sourceTree = "<group>"; };
+		7FCD60AC2BF466FD00E57007 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F3607BB2BF3D3D0000FA1B0 /* KeychainAccess in Frameworks */,
 				7F21DBFA2BF0835100095C36 /* CachedAsyncImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +110,7 @@
 		7F33DE172BEBB98300506D6C /* CoffeeShop */ = {
 			isa = PBXGroup;
 			children = (
+				7F3607BC2BF3D3D5000FA1B0 /* Utilities */,
 				7F0EC82A2BED3358001DE630 /* Networking */,
 				7F33DE2E2BEBC47000506D6C /* ModelView */,
 				7F33DE2D2BEBC46B00506D6C /* Model */,
@@ -160,6 +167,15 @@
 			path = ModelView;
 			sourceTree = "<group>";
 		};
+		7F3607BC2BF3D3D5000FA1B0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7F3607BD2BF3D3E2000FA1B0 /* SecureStorage.swift */,
+				7FCD60AC2BF466FD00E57007 /* UserRepository.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,6 +194,7 @@
 			name = CoffeeShop;
 			packageProductDependencies = (
 				7F21DBF92BF0835100095C36 /* CachedAsyncImage */,
+				7F3607BA2BF3D3D0000FA1B0 /* KeychainAccess */,
 			);
 			productName = CoffeeShop;
 			productReference = 7F33DE152BEBB98300506D6C /* CoffeeShop.app */;
@@ -209,6 +226,7 @@
 			mainGroup = 7F33DE0C2BEBB98300506D6C;
 			packageReferences = (
 				7F21DBF82BF0835100095C36 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
+				7F3607B92BF3D3D0000FA1B0 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 			);
 			productRefGroup = 7F33DE162BEBB98300506D6C /* Products */;
 			projectDirPath = "";
@@ -241,6 +259,7 @@
 				7F0EC8292BED3261001DE630 /* HomeViewModel.swift in Sources */,
 				7F21DBF72BF0788900095C36 /* DrinkRowView.swift in Sources */,
 				7F3607B62BF3C363000FA1B0 /* EmptyBasketView.swift in Sources */,
+				7F3607BE2BF3D3E2000FA1B0 /* SecureStorage.swift in Sources */,
 				7F0EC8232BED311E001DE630 /* Basket.swift in Sources */,
 				7F0EC82E2BED39B3001DE630 /* Repository.swift in Sources */,
 				7F33DE272BEBB9DA00506D6C /* HomeView.swift in Sources */,
@@ -252,6 +271,7 @@
 				7F0EC82C2BED38FE001DE630 /* FirebaseRepository.swift in Sources */,
 				7F33DE302BEBC48400506D6C /* Drink.swift in Sources */,
 				7F0EC8272BED318F001DE630 /* User.swift in Sources */,
+				7FCD60AD2BF466FD00E57007 /* UserRepository.swift in Sources */,
 				7F3607B82BF3CF4C000FA1B0 /* AcountViewModel.swift in Sources */,
 				7F21DBFD2BF0837A00095C36 /* RemoteImageView.swift in Sources */,
 				7F33DE2B2BEBC40100506D6C /* AccountView.swift in Sources */,
@@ -470,6 +490,14 @@
 				minimumVersion = 2.1.1;
 			};
 		};
+		7F3607B92BF3D3D0000FA1B0 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -477,6 +505,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7F21DBF82BF0835100095C36 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
 			productName = CachedAsyncImage;
+		};
+		7F3607BA2BF3D3D0000FA1B0 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F3607B92BF3D3D0000FA1B0 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

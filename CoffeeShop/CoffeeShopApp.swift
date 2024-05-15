@@ -13,6 +13,7 @@ struct CoffeeShopApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(BasketViewModel(repository: FirebaseRepository()))
+                .environmentObject(UserRepository())
         }
     }
 }

@@ -24,6 +24,7 @@ struct EmptyBasketView: View {
             
             VStack {
                 Image(systemName: "list.bullet.clipboard")
+                    .symbolEffect(.variableColor)
                     .symbolRenderingMode(.palette)
                     .foregroundStyle(.gray, .red, .green)
                     .font(.system(size: 120))
