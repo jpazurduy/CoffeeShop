@@ -43,6 +43,9 @@ struct HomeView: View {
                 }
                 .blur(radius: isShowingDetail ? 20 : 0)
                 .disabled(isShowingDetail)
+                .task {
+                    await viewModel.saveMenu()
+                }
             }
             
             if isShowingDetail {

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F08ED072BF581170031D957 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7F08ED062BF581170031D957 /* FirebaseFirestoreSwift */; };
+		7F08ED092BF581860031D957 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F08ED082BF581860031D957 /* GoogleService-Info.plist */; };
+		7F08ED0B2BF582040031D957 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7F08ED0A2BF582040031D957 /* FirebaseAnalytics */; };
+		7F08ED0E2BF586380031D957 /* FirebaseFirestoreHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F08ED0D2BF586380031D957 /* FirebaseFirestoreHelper.swift */; };
 		7F0EC8232BED311E001DE630 /* Basket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0EC8222BED311E001DE630 /* Basket.swift */; };
 		7F0EC8252BED314D001DE630 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0EC8242BED314D001DE630 /* Order.swift */; };
 		7F0EC8272BED318F001DE630 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0EC8262BED318F001DE630 /* User.swift */; };
@@ -35,6 +39,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F08ED082BF581860031D957 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7F08ED0D2BF586380031D957 /* FirebaseFirestoreHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseFirestoreHelper.swift; sourceTree = "<group>"; };
 		7F0EC8222BED311E001DE630 /* Basket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basket.swift; sourceTree = "<group>"; };
 		7F0EC8242BED314D001DE630 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		7F0EC8262BED318F001DE630 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -68,12 +74,22 @@
 			files = (
 				7F3607BB2BF3D3D0000FA1B0 /* KeychainAccess in Frameworks */,
 				7F21DBFA2BF0835100095C36 /* CachedAsyncImage in Frameworks */,
+				7F08ED0B2BF582040031D957 /* FirebaseAnalytics in Frameworks */,
+				7F08ED072BF581170031D957 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F08ED0C2BF5860D0031D957 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7F08ED0D2BF586380031D957 /* FirebaseFirestoreHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		7F0EC82A2BED3358001DE630 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +126,8 @@
 		7F33DE172BEBB98300506D6C /* CoffeeShop */ = {
 			isa = PBXGroup;
 			children = (
+				7F08ED0C2BF5860D0031D957 /* Helper */,
+				7F08ED082BF581860031D957 /* GoogleService-Info.plist */,
 				7F3607BC2BF3D3D5000FA1B0 /* Utilities */,
 				7F0EC82A2BED3358001DE630 /* Networking */,
 				7F33DE2E2BEBC47000506D6C /* ModelView */,
@@ -195,6 +213,8 @@
 			packageProductDependencies = (
 				7F21DBF92BF0835100095C36 /* CachedAsyncImage */,
 				7F3607BA2BF3D3D0000FA1B0 /* KeychainAccess */,
+				7F08ED062BF581170031D957 /* FirebaseFirestoreSwift */,
+				7F08ED0A2BF582040031D957 /* FirebaseAnalytics */,
 			);
 			productName = CoffeeShop;
 			productReference = 7F33DE152BEBB98300506D6C /* CoffeeShop.app */;
@@ -227,6 +247,7 @@
 			packageReferences = (
 				7F21DBF82BF0835100095C36 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
 				7F3607B92BF3D3D0000FA1B0 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				7F08ED052BF581170031D957 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 7F33DE162BEBB98300506D6C /* Products */;
 			projectDirPath = "";
@@ -244,6 +265,7 @@
 			files = (
 				7F33DE202BEBB98500506D6C /* Preview Assets.xcassets in Resources */,
 				7F33DE1D2BEBB98500506D6C /* Assets.xcassets in Resources */,
+				7F08ED092BF581860031D957 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +282,7 @@
 				7F21DBF72BF0788900095C36 /* DrinkRowView.swift in Sources */,
 				7F3607B62BF3C363000FA1B0 /* EmptyBasketView.swift in Sources */,
 				7F3607BE2BF3D3E2000FA1B0 /* SecureStorage.swift in Sources */,
+				7F08ED0E2BF586380031D957 /* FirebaseFirestoreHelper.swift in Sources */,
 				7F0EC8232BED311E001DE630 /* Basket.swift in Sources */,
 				7F0EC82E2BED39B3001DE630 /* Repository.swift in Sources */,
 				7F33DE272BEBB9DA00506D6C /* HomeView.swift in Sources */,
@@ -482,6 +505,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		7F08ED052BF581170031D957 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.26.0;
+			};
+		};
 		7F21DBF82BF0835100095C36 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image";
@@ -501,6 +532,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7F08ED062BF581170031D957 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F08ED052BF581170031D957 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		7F08ED0A2BF582040031D957 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F08ED052BF581170031D957 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
 		7F21DBF92BF0835100095C36 /* CachedAsyncImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7F21DBF82BF0835100095C36 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
