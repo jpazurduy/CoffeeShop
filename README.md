@@ -11,12 +11,12 @@ This project was implemented using XCode 15.3 and iOS 17 deployment target.
 ### - ADVANCED APP DESIGN
 The main goal to develop this simple app is demostrate the use of 
 
-   #### - SwifUI
-   #### - Firebase integration with Cloud Storege
-   #### - Use @State, @Binding, @Published @StateObject, EnvironmentObjetc properties
-   #### - Async and Await
-   #### - Task{ } and .task{ } block to manage concurrency implementation
-   #### - MVVM architecture to implement this solution.
+  - SwifUI
+  - Firebase integration with Cloud Storege
+  - Use @State, @Binding, @Published @StateObject, EnvironmentObjetc properties
+  - Async and Await
+  - Task{ } and .task{ } block to manage concurrency implementation
+  - MVVM architecture to implement this solution.
 
 ### - SWIFTUI USE
 We will create a list of items with a "Add basket" button to add new ones and a detail view to show all items.
