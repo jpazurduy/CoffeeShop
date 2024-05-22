@@ -16,6 +16,7 @@ The main goal to develop this simple app is demostrate the use of
   - Use @State, @Binding, @Published @StateObject, EnvironmentObjetc properties
   - Async and Await
   - Task{ } and .task{ } block to manage concurrency implementation
+  - SPM
   - MVVM architecture to implement this solution.
 
 ### - SWIFTUI USE
