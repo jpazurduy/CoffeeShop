@@ -16,7 +16,9 @@ struct BasketView: View {
     @ViewBuilder
     func placeOrderButton() -> some View {
         Button(action: {
-            basket.createOrder(for: userRepository.user)
+            Task {
+                await basket.createOrder(for: userRepository.user)
+            }
         }, label: {
             Text("\(basket.totalPrice, format: .currency(code: "EUR")) - Place Order")
         })
@@ -45,6 +47,9 @@ struct BasketView: View {
                 }
             }
             .navigationTitle("🛒 Basket")
+            .alert(isPresented: $basket.showError) {
+                Alert(title: Text("Error"), message: Text(basket.basketError?.description ?? ""))
+            }
         }
     }
 }

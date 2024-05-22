@@ -29,10 +29,10 @@ final class HomeViewModel: ObservableObject {
         }
     }
     
-    func saveMenu() async {
-        try await repository.saveDrinks()
-    }
-    
+//    func saveMenu() async {
+//        try await repository.saveDrinks()
+//    }
+//    
     func selectedDrink(drink: Drink) {
         self.selectedDrink = drink
     }

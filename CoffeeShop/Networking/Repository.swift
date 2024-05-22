@@ -10,5 +10,5 @@ import Foundation
 protocol Repository: ObservableObject {
     func saveDrinks() async
     func fetchDrinks() async -> [Drink]
-    func placeHolder(order: Order)
+    func placeOrder(order: Order) async
 }

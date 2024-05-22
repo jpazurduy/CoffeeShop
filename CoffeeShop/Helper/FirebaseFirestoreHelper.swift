@@ -17,7 +17,7 @@ enum FirebaseCollectionReference: String {
 class FirebaseFirestoreHelper {
     static func firebaseReference(_ collectionReference: FirebaseCollectionReference) async ->  CollectionReference {
         let db = Firestore.firestore()
-        let result =  try await db.collection(collectionReference.rawValue)
+        let result = db.collection(collectionReference.rawValue)
         return result
     }
 }

@@ -8,7 +8,13 @@
 import Foundation
 
 final class BasketViewModel: ObservableObject {
+   
+    
     @Published private(set) var items: [Drink] = []
+    
+    @Published var showError = false
+    
+    @Published var basketError: AppError?
     
     private let repository: any Repository
     
@@ -29,10 +35,23 @@ final class BasketViewModel: ObservableObject {
         items.remove(atOffsets: offset)
     }
     
-    func createOrder(for user: User?) {
-        guard !items.isEmpty else { return }
+    func createOrder(for user: User?) async {
+        guard !items.isEmpty else {
+            Task { @MainActor in
+                basketError = .EmptyBasketError
+                showError = true
+            }
+            
+            return
+        }
         
-        guard let user = user else { return }
+        guard let user = user else {
+            Task { @MainActor in
+                basketError = .NoUserError
+                showError = true
+            }
+            return
+        }
         
         let order = Order(id: UUID().uuidString,
                           customerName: user.name,
@@ -41,7 +60,7 @@ final class BasketViewModel: ObservableObject {
                           items: items,
                           totalValue: totalPrice)
         
-        repository.placeHolder(order: order)
+        await repository.placeOrder(order: order)
         items = []
     }
 }
