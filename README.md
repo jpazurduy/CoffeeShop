@@ -35,7 +35,7 @@ We save all items products in our Firebase Storage and fetch to load the view pr
     <td><img src="Screenshots/4.png" alt="drawing" width="400" heigh="867" align="center"/></th>
   </tr>
     <tr>
-    <td><img src="Screenshots/5.png" colspan="2" alt="drawing" width="800" heigh="867" align="center"/></th>
+    <td colspan="2"><img src="Screenshots/5.png" alt="drawing" width="800" heigh="867" align="center"/></th>
   </tr>
 </table>
 
